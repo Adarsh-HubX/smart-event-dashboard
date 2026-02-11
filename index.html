@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Smart Event Dashboard</h1>
+        <div class="eventForm">
+            <h2>Add New Event</h2>
+            <form id="form">
+                <label for="eventTitle">Event Title:</label>
+                <input type="text" id="eventTitle" required>
+
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" required>
+
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="Conference">Conference</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Meetup">Meetup</option>
+                    <option value="Webinar">Webinar</option>
+                    <option value="Social">Social</option>
+                </select>
+
+                <label for="description">Description</label>
+                <textarea id="description"></textarea>
+
+                <button type="submit">Add Event</button>     
+            </form>
+        </div>
+
+        <div class="events">
+            <h2>My Events</h2>
+            <button id="clearBtn">Clear all events</button>
+            <button id="sampleBtn">Add sample events</button>
+
+            <div class="cards" id="eventContainer">
+                <p id="emptyMsg">No events yet. Add your first event!</p>
+            </div>
+        </div>
+
+        <div class="dom">
+            <h2>DOM Manipulation Demo</h2>
+            You pressed: <span class="key" id="keyPressed"></span>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
